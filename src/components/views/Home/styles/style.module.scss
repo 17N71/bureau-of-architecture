@@ -1,0 +1,36 @@
+@import "../../../Header/style/style.module.scss";
+.video-section{
+  overflow: hidden;
+  width: 100%;
+  z-index: 3;
+  height: 100%;
+}
+.video-video{
+  transform:translateY( var(--scrolled-p));
+}
+.video-title{
+  @include fluid-type(320px, 1920px, 20px, 203px);
+  color: white;
+  text-transform: uppercase;
+  user-select: none;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, var(--scrolled-t));
+  z-index: 3;
+}
+.to-top{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: none;
+  background: rgba(0,0,0,0);
+  outline: none;
+  margin: 0 0 15px;
+  *:not(span){
+    font-size: 26px;
+  }
+}
